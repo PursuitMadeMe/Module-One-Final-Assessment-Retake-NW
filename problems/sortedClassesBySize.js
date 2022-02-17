@@ -11,8 +11,17 @@
 * returns: ["B", "C", "A"]
 */
 
-function sortClassesBySize() {
+function sortClassesBySize(arr) {
+    let classCount = 0;
+    let classNames = [];
 
+    for (let i = 0; i < arr.length; i++){
+        if(arr[i].studentCount > classCount)
+        classNames.push(arr[i].subject)
+
+        classNames.sort().reverse();
+    }
+        return classNames;
 }
 
 module.exports = sortClassesBySize

@@ -14,12 +14,12 @@
 function oldestPerson(obj) {
     greatestAge = 0;
 
-    for (let age = 0; age < obj.length; i++){
-        if(obj.age > greatestAge){
-            greatestAge = obj.age;
+    for (let i = 0; age < i.length; i++){
+        if(obj[i].value > greatestAge){
+            greatestAge = obj[i].value;
         }
     }
-    return obj.age;
+    return obj[i];
 }
 
 module.exports = oldestPerson
