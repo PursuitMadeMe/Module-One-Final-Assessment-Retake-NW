@@ -11,8 +11,19 @@
 * returns: 167
 */
 
-function totalNumberOfStudents() {
+function totalNumberOfStudents(arr) {
 
+    //create a variable to equal zero
+    let count = 0;
+    //loop thoguth the array of student objects
+    for(let i = 0; i < arr.length; i++)
+    //conditional statement iteration through array at studentCount key value
+    if(arr[i].studentCount){
+        //add that iteration value to the variable count 
+        count += arr[i].studentCount
+    }
+    //return the new count with the added values
+    return  count;
 }
 
 module.exports = totalNumberOfStudents

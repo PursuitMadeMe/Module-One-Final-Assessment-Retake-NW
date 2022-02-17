@@ -14,6 +14,7 @@
 */
 
 function countThrees(n) {
+let numOfThree = 0;
 
 }
 
