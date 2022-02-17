@@ -19,7 +19,7 @@ function oldestPerson(obj) {
             greatestAge = obj.age;
         }
     }
-    return obj[age];
+    return obj.age;
 }
 
 module.exports = oldestPerson
