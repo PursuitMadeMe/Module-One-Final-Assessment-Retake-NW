@@ -14,8 +14,15 @@
 */
 
 function countThrees(n) {
-let numOfThree = 0;
-
+let numOf = 0;
+for(let i = 0; i < n.length; i++)
+    if(n[i] === 3){
+        numOf[n] += 1
+    } else {
+        numOf[n] = 1
+    }
+    return numOf;
 }
+
 
 module.exports = countThrees
