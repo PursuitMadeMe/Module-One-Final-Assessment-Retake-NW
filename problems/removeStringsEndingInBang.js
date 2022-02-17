@@ -11,8 +11,15 @@
 * returns: ["", "a"]
 */
 
-function removeStringsEndingInBang() {
+function removeStringsEndingInBang(arr) {
+    let noBang = [];
 
+    for (let i = 0; i < arr.length; i++){
+        if(!arr.includes('!')){
+            noBang.push(arr)
+        }
+    }
+    return noBang;
 }
 
 module.exports = removeStringsEndingInBang

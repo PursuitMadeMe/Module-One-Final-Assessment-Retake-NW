@@ -13,8 +13,15 @@
 * returns: false (because the string "ten" is not a number)
 */
 
-function isMultipleOfFive() {
-
+function isMultipleOfFive(n) {
+    //conditional statment if given number divided by 5 equals 0
+    if(n % 5 === 0){
+        //return true a boolean
+        return true;
+    } else {
+        //else return false a boolean
+        return false;
+    }
 }
 
 module.exports = isMultipleOfFive

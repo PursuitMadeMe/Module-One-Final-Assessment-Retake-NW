@@ -13,7 +13,7 @@
 * returns: 0
 */
 
-function countThrees() {
+function countThrees(n) {
 
 }
 
