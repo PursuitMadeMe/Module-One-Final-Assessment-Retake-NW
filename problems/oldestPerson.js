@@ -12,14 +12,24 @@
  * returns: 'Kevin'
  */
 function oldestPerson(obj) {
-    greatestAge = 0;
-
-    for (let i = 0; age < i.length; i++){
-        if(obj[i].value > greatestAge){
-            greatestAge = obj[i].value;
+    greatestAge =-1 ;
+    let name;
+    //looping through an object use the FOR IN loop ONLY
+    //Key is equal to the key name 
+    for(var key in obj){
+            //conditional statement if the greatesAge variable is less than the object key looped on 
+        if(greatestAge < obj[key]){
+            //greatestAge value changes to that key 
+            greatestAge=obj[key]
+            //lets key equal to the name in the object 
+            name=key
         }
     }
-    return obj[i];
-}
+    //return the name that now has the greatest age after comparison statement to the variable 
+    return name
+    
+    }
+
+
 
 module.exports = oldestPerson

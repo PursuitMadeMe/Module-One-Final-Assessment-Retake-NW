@@ -15,12 +15,19 @@
 
 function countThrees(n) {
 let numOf = 0;
-for(let i = 0; i < n.length; i++)
-    if(n[i] === 3){
-        numOf[n] += 1
-    } else {
-        numOf[n] = 1
+//a number with no known length must use while loop! (NOT .length)
+while(n>0){
+    //rem gets each number from within the numbers integer ( 3327 )
+    rem=n%10
+    // conditional if the number fetched is 3  add (++) to variable numOf
+    if(rem ==3){
+        numOf++;
     }
+    //input number is now updated with conditional and returns the coditional number (3)
+    //Math.floor is without the remainder value  ( ONLY the 3's)
+    n=Math.floor(n/10)
+}
+//return the updated integer with just the 3 fetched
     return numOf;
 }
 

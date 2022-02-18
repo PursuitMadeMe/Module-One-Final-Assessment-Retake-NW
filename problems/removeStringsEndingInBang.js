@@ -14,10 +14,13 @@
 function removeStringsEndingInBang(arr) {
 
     for (let i = 0; i < arr.length ; i++){
-        if(arr.length - 1[i] === '!' ){
-            arr.pop(arr[i])
+        //conditional statement if element arr at indicater has a bang operatoron the end .slice(-1) removes the last index 
+        if(arr[i].slice(-1) === '!' ){
+            //splice(which emelent at the i indicater, remove just 1 element from the arr)
+            arr.splice(i,1)
         }
     }
+    //return updated arr with the removed elements with the bang on the end ONLY
     return arr;
 }
 
